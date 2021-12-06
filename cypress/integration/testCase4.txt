@@ -1,0 +1,36 @@
+https://app.popsql.com/queries/-MqBwYfblL_ywc96dI_7/untitled-query-dec-6-2021
+
+CREATE TABLE users (
+    id INT,
+    name VARCHAR(20),
+    email VARCHAR(20),
+    citizenship_country_id VARCHAR(20),
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE countries (
+    id INT,
+    name VARCHAR(20),
+    iso VARCHAR(20),
+    PRIMARY KEY(id)
+);
+
+DROP table countries;
+
+CREATE TABLE countries (
+    id INT,
+    name VARCHAR(20),
+    users INT,
+    PRIMARY KEY(id)
+);
+
+
+INSERT INTO countries VALUES(1, 'France', '67000000' );
+INSERT INTO countries VALUES(9, 'Vatican city', '825' );
+
+SELECT * FROM countries;
+
+SELECT name, users
+FROM countries 
+WHERE users >= 1000
+ORDER BY users DESC;
