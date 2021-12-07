@@ -4,11 +4,12 @@ import  cypressCommands  from './../support/commands'
 describe('Login, check products and checkout', () => {
 
 
-  it('check history issues  ', () => {
-    
+  beforeEach(() => {
     cypressCommands.logsIn()
+  })
+
+  it('check history issues  ', () => {
     cypressCommands.fillChart()
     cypressCommands.checksOut()
-       
   }) 
 })
