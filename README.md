@@ -9,11 +9,11 @@ The first test* logs into a free automation webservice and proceed to fill the s
 
 The second test** are a couple of basic gep api calls.
 
-The third test is not a test, but rather a SQL exercise.
+The third test*** is not a test, but rather a SQL exercise.
 
 
  */Users/pedro/Documents/cypressTesting/cypress/integration/testCase1.spec.js
 
  **/Users/pedro/Documents/cypressTesting/cypress/integration/testCase2.spec.js
 
- /Users/pedro/Documents/cypressTesting/cypress/integration/SQL.txt
+ ***/Users/pedro/Documents/cypressTesting/cypress/integration/SQL.txt
